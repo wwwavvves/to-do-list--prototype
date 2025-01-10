@@ -1,58 +1,68 @@
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
-        font-size: 100px;
-        line-height: 1;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-      .todo-list {
-        margin: 30px 30px 0;
-      }
+.todo-list {
+  margin: 30px auto;
+  padding: 0 20px;
+  max-width: 1000px;
+}
 
-      .task-container {
-        display: flex;
-        align-items: flex-start;
-        margin: 5px 0;
-      }
+.task-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 5px 0;
+}
 
-      .delete-btn {
-        background-color: transparent;
-        border: none;
-        color: pink;
-      }
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: pink;
+  cursor: pointer;
+}
 
-      textarea {
-        margin-left: 10px;
-        border: none;
-        color: rgb(68, 68, 68);
-        width: 100%;
-        overflow: hidden; /* hide scrollbars */
-        resize: none; /* prevent manual resizing */
-        text-transform: lowercase;
-      }
+textarea {
+  margin-left: 10px;
+  border: none;
+  color: rgb(68, 68, 68);
+  width: 100%;
+  overflow: hidden; /* hide scrollbars */
+  resize: none; /* prevent manual resizing */
+  text-transform: lowercase;
+}
 
-      textarea:focus-visible {
-        outline: none;
-      }
+textarea:focus-visible {
+  outline: none;
+}
 
-      textarea::placeholder {
-        color: rgb(194, 194, 194);
-      } 
+textarea::placeholder {
+  color: rgb(194, 194, 194);
+}
 
-      #add-task {
-        margin: 40px 0;
-        padding: 30px 70px 40px;
-        border: none;
-        background-color: rgb(51, 80, 224);
-        color: white;
-        border-radius: 50%;
-      }
+.btn-container {
+  text-align: center;
+}
 
-      @media (max-width: 576px) {
-        * {
-            font-size: 60px;
-        }
-      }
+#add-task {
+  margin: 40px 0;
+  padding: 40px 180px 50px;
+  border: none;
+  background-color: rgb(51, 80, 224);
+  color: white;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  * {
+    font-size: 60px;
+  }
+
+  #add-task {
+    padding: 30px 100px 35px;
+  }
+}
